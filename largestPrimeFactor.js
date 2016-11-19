@@ -21,7 +21,6 @@ for (var i = 2; i < n; i++) {
     //if n is divisible by i, then record i in an array
     narrowedDown.push(i);
   }
-
 }
 
 //find the prime numbers in this array
@@ -29,12 +28,11 @@ for (var i = 2; i < n; i++) {
 console.log(narrowedDown);
 
 for (var x = 0; x <= narrowedDown.length-1; x++) {
-
   if (narrowedDown[x] % x === 0) {
-    console.log([x]);
-  }
-}
+    console.log(x);
+  };
 
+}
 
   return primeNumber;
 };
