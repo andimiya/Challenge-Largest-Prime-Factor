@@ -18,19 +18,22 @@ for (var i = 2; i < n; i++) {
   //narrow down i until you get prime factors of n
 
   if (n % i === 0){
-    //if n is divisible by 0, then store i
-
+    //if n is divisible by i, then record i in an array
     narrowedDown.push(i);
   }
 
-
 }
 
+//find the prime numbers in this array
 
 console.log(narrowedDown);
 
+for (var x = 0; x <= narrowedDown.length-1; x++) {
 
-// find square root of the
+  if (narrowedDown[x] % x === 0) {
+    console.log([x]);
+  }
+}
 
 
   return primeNumber;
